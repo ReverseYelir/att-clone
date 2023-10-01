@@ -19,7 +19,7 @@ export default function Header() {
         <a>Ver en espa&ntilde;ol</a>
       </div>
       <div className="flex justify-between">
-        <div className="flex gap-4 items-center">
+        <div className="lg:flex lg:gap-4 lg:items-center hidden">
           <div className="flex items-center">
             <a>
               <CompanyLogo />
@@ -29,20 +29,23 @@ export default function Header() {
               <MenuIcon />
             </a>
           </div>
-          <a>Deals</a>
-          <a>Wireless</a>
-          <a>Internet</a>
-          <a>Accessories</a>
-          <a>TV</a>
-          <a>Prepaid</a>
-          <a>Business</a>
+          <a className="link-hover">Deals</a>
+          <a className="link-hover">Wireless</a>
+          <a className="link-hover">Internet</a>
+          <a className="link-hover">Accessories</a>
+          <a className="link-hover">TV</a>
+          <a className="link-hover">Prepaid</a>
+          <a className="link-hover">Business</a>
         </div>
+        <a className="lg:hidden sm:visible">
+          <MenuIcon />
+        </a>
         <div className="flex gap-4 items-center">
-          <form className="flex items-center border-slate-300 rounded-md border-solid border-2 px-4 p-1">
+          <form className="flex items-center border-slate-300 rounded-md border-solid border-2 px-4 p-1 w-80">
             <input
               type="text"
               placeholder="I'm looking for..."
-              className="w-80"
+              className="w-full"
             />
             <button className="text-slate-500">
               <SearchIcon />
@@ -54,9 +57,9 @@ export default function Header() {
               <ShoppingCartIcon />
             </button>
             <div className="h-6 w-[2px] bg-black mx-3 rounded-lg"></div>
-            <a>Support</a>
+            <a className="link-hover">Support</a>
             <div className="h-6 w-[2px] bg-black mx-3 rounded-lg"></div>
-            <a>My AT&T</a>
+            <a className="link-hover">My AT&T</a>
           </div>
         </div>
       </div>
