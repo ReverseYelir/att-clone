@@ -13,7 +13,7 @@ Business
 */
 export default function Header() {
   return (
-    <div className="flex-col container m-auto">
+    <div className="flex-col container m-auto pt-4">
       <div className="flex gap-4 justify-end">
         <a>Find a store</a>
         <a>Ver en espa&ntilde;ol</a>

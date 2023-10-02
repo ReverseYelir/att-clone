@@ -10,8 +10,8 @@ import LabeledIcon from "./components/LabeledIcon";
 
 function Slider() {
   return (
-    <div className="grid grid-cols-3 align-middle bg-gradient-to-r from-sky-600 to-sky-500 gap-4">
-      <div className="col-span-3 text-center text-6xl pt-6 p-4 text-white">
+    <div className="grid grid-cols-3 align-middle bg-gradient-to-r from-sky-600 to-sky-300 gap-4 pb-8 rounded-lg">
+      <div className="col-span-3 text-center text-5xl pt-6 p-4 text-white font-bold">
         Let's get you connected
       </div>
       <div className="flex flex-col gap-3 p-4  rounded-md bg-white mx-8">
@@ -64,7 +64,7 @@ function Slider() {
 
 export default function Home() {
   return (
-    <main className="flex flex-col lg:mx-40">
+    <main className="flex flex-col container m-auto">
       <div className="flex gap-20 text-neutral-600 my-12 m-auto w-fit">
         <LabeledIcon icon={<DealIcon />} label="Deals" />
         <LabeledIcon icon={<SmartphoneIcon />} label="Phones & devices" />
@@ -74,13 +74,15 @@ export default function Home() {
         <LabeledIcon icon={<PrepaidIcon />} label="Prepaid" />
         <LabeledIcon icon={<BundleIcon />} label="Bundles" />
       </div>
-      <div className="flex bg-[#0057b8] text-white justify-center text-xl p-4 rounded-xl mb-16">
+      <div className="flex bg-[#0057b8] text-white justify-center text-xl p-4 rounded-xl font-semibold">
         <p>
-          Have a new Iphone 15? Update to iOS 17.0.2 before transferring content
+          Have a new iPhone 15? Update to iOS 17.0.2 before transferring content
           from your old device. <span className="underline">Learn more</span>
         </p>
       </div>
-      <Slider />
+      <div className="my-12">
+        <Slider />
+      </div>
     </main>
   );
 }
